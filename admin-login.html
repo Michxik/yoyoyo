@@ -1,0 +1,104 @@
+&lt;!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administracyjny - Logowanie - GOLDEN CAR</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="wedding-bg-pattern admin-page admin-login-page">
+  &lt;!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6d08fc5b-ef93-48f1-8d70-a39d657f1661_removalai_preview-YHX84hRFW4siRY2mSe475oaEeGUs2Q.png" alt="GOLDEN CAR Logo" width="250" height="165">
+        </a>
+      </div>
+      
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Strona Główna</a></li>
+          <li><a href="vehicles.html" class="nav-link">Samochody</a></li>
+          <li><a href="about.html" class="nav-link">O Nas</a></li>
+          <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="reservation.html" class="btn btn-primary">Zarezerwuj</a>
+        <button class="mobile-menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  &lt;!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Strona Główna</a></li>
+      <li><a href="vehicles.html" class="mobile-nav-link">Samochody</a></li>
+      <li><a href="about.html" class="mobile-nav-link">O Nas</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Kontakt</a></li>
+      <li><a href="reservation.html" class="btn btn-primary">Zarezerwuj</a></li>
+    </ul>
+  </div>
+  
+  &lt;!-- Main Content -->
+  <main>
+    <div class="admin-login">
+      <div class="text-center mb-6">
+        <h1 class="text-2xl font-bold">Panel Administracyjny</h1>
+        <p class="mt-2 text-muted-foreground font-sans">Zaloguj się, aby zarządzać rezerwacjami</p>
+      </div>
+      
+      <div id="login-error" class="form-message form-message-error" style="display: none;"></div>
+      
+      <form id="admin-login-form" class="space-y-6">
+        <div class="form-group">
+          <label for="password" class="form-label">Hasło</label>
+          <div style="position: relative;">
+            <input type="password" id="password" name="password" class="form-input" required>
+            <button type="button" id="toggle-password" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          Zaloguj się
+        </button>
+      </form>
+      
+      <div class="mt-4 text-center text-sm text-muted-foreground font-sans">
+        <p>Dostęp tylko dla autoryzowanego personelu</p>
+      </div>
+    </div>
+  </main>
+  
+  &lt;!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6d08fc5b-ef93-48f1-8d70-a39d657f1661_removalai_preview-YHX84hRFW4siRY2mSe475oaEeGUs2Q.png" alt="GOLDEN CAR Logo" width="150" height="50">
+            </a>
+          </div>
+          <p class="footer-description">Ekskluzywny wynajem samochodów na Twój wyjątkowy dzień.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61574254179023" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/auta_slubne_/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37
